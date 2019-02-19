@@ -128,7 +128,7 @@ header .logo {
 .close button{
     border: none;
     background: transparent;
-    color: white;
+    outline: none;
 }
 
 .close button img {

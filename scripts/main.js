@@ -32,7 +32,7 @@ let addResult = () => {
             temperatureEl = document.createElement('p'),
         cloudEl = document.createElement('img'),
         closeEl = document.createElement('div'),
-            closeBtn = document.createElement('button');
+            crossBtn = document.createElement('button');
 
     cityNameEl.innerText = `${city}`;
     temperatureEl.innerText = `${maxTemp} ℃`;
@@ -42,6 +42,8 @@ let addResult = () => {
         cloudEl.setAttribute('src', './img/clouds.svg');
     } else if (cloudy === 'Rain') {
         cloudEl.setAttribute('src', './img/raining.svg');
+    } else if (cloudy === 'Snow') {
+        cloudEl.setAttribute('src', './img/snow.svg');
     }
 
     resultItem.classList.add('resultItem');
@@ -49,10 +51,10 @@ let addResult = () => {
     tempEl.classList.add('temp');
     cloudEl.classList.add('cloud');
     closeEl.classList.add('close');
-    closeBtn.classList.add('closeBtn')
+    crossBtn.classList.add('closeBtn')
 
     closeEl.appendChild(crossBtn);
-    closeBtn.innerHTML = '<img src="./img/delete.svg" alt="">';
+    crossBtn.innerHTML = '<img src="./img/delete.svg" alt="">';
 
     cityEl.appendChild(cityNameEl);
     tempEl.appendChild(temperatureEl);
@@ -66,5 +68,5 @@ let addResult = () => {
 }
 
 $('.closeBtn').on('click', () => {
-    $('.resultItem').remove();
+    $(this).parent().parent().remove();
 });
