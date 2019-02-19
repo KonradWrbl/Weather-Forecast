@@ -63,7 +63,7 @@ header .logo {
     background: rgba(0,0,0, .2);
     border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 0 10px 0;
 }
@@ -74,7 +74,7 @@ header .logo {
     background: none;
     border: none;
     border-bottom: 1px solid white;
-    width: 75%;
+    width: 70%;
     font-size: 1em;
     outline: none;
 }
