@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-    background-image: url(http://www.machapp.net/images/wallpapers/tcw-wallpaper-02.jpg);
+    background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;

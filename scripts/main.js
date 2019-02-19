@@ -44,6 +44,8 @@ let addResult = () => {
         cloudEl.setAttribute('src', './img/raining.svg');
     } else if (cloudy === 'Snow') {
         cloudEl.setAttribute('src', './img/snow.svg');
+    } else if (cloudy === 'Drizzle') {
+        cloudEl.setAttribute('src', './img/drizzle.svg');
     }
 
     resultItem.classList.add('resultItem');
