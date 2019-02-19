@@ -12,7 +12,7 @@ $('.searchButton').on('click', () => {
     axios.get(`${API}weather?q=${$("#searchInput")[0].value}&appid=e86ba166de2e36b28f351cc82f422e7f`)
         .then((response) => {
             console.log(response);
-            maxTemp = Math.round(response.data.main.temp_max - 273.3);
+            maxTemp = Math.round(response.data.main.temp - 273.3);
             cloudy = response.data.weather[0].main;
             city = response.data.name
             addResult();
