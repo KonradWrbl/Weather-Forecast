@@ -126,13 +126,18 @@ header .logo {
 }
 
 .close button{
+    padding: 0;
+    margin: 0;
     border: none;
     background: transparent;
     outline: none;
+    width: auto;
+    height: auto;
 }
 
 .close button img {
     height: 20px;
+    margin: 0 5px 0 0;
 }
 
 @media (min-width: 768px) {

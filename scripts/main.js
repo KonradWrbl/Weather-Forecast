@@ -56,7 +56,7 @@ let addResult = () => {
     crossBtn.classList.add('closeBtn')
 
     closeEl.appendChild(crossBtn);
-    crossBtn.innerHTML = '<img src="./img/delete.svg" alt="">';
+    crossBtn.innerHTML = '<img class="cross" src="./img/delete.svg" alt="">';
 
     cityEl.appendChild(cityNameEl);
     tempEl.appendChild(temperatureEl);
@@ -69,6 +69,6 @@ let addResult = () => {
     $('.results')[0].append(resultItem);
 }
 
-$('.closeBtn').on('click', () => {
-    $(this).parent().parent().remove();
+$('.results').on('click', ".cross", (e) => {
+    e.target.parentNode.parentNode.parentNode.remove();
 });
