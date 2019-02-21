@@ -1,6 +1,4 @@
 const API = '//api.openweathermap.org/data/2.5/';
-let maxTemp;
-let minTem;
 
 $('.searchButton').on('click', () => {
 
