@@ -21,6 +21,8 @@ $('.searchButton').on('click', () => {
     $("#searchInput")[0].value = '';
 });
 
+//localhost
+
 let addResult = () => {
 
     let resultItem = document.createElement('div'),
